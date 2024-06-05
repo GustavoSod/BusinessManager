@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Business Manager</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= javascript_include_tag 'application', 'data-turbo-track': 'reload' %>
+  <%= stylesheet_link_tag 'application', 'data-turbo-track': 'reload' %>
+</head>
+<body>
+  <div style="background-color: #eee; display: flex; justify-content: space-around; align-items:center; margin-top: -10px; padding: 15px; margin-left: -10px; margin-right: -10px">
+    <h1 style="font-family: Arial, sans-serif"">Business Manager</h1>
+    <div style="display:flex">
+      <p style="padding: 10px">
+        <%= link_to "Home", welcome_index_path, style:"color:#000; text-decoration: none; font-family: Arial, sans-serif" %>
+      </p>
+      <p style="padding: 10px">
+        <%= link_to "Employees", employees_path, style:"color:#000; text-decoration: none; font-family: Arial, sans-serif"%>
+      </p>
+      <p style="padding: 10px">
+        <%= link_to "Tasks", tasks_path, style:"color:#000; text-decoration: none; font-family: Arial, sans-serif" %>
+      </p>
+    </div>
+  </div>
+
+  <p style="color: green"><%= notice %></p>
+
+  <%= yield %>
+</body>
+</html>

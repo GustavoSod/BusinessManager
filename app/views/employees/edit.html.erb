@@ -1,10 +1,16 @@
-<h1>Editing employee</h1>
+<div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center">
+  <h1 style="font-family: Arial">Editing employee</h1>
 
-<%= render "form", employee: @employee %>
+  <%= render "form", employee: @employee %>
 
-<br>
+  <br>
 
-<div>
-  <%= link_to "Show this employee", @employee %> |
-  <%= link_to "Back to employees", employees_path %>
+  <div style="display: flex">
+    <p style="margin-left: 20px; background-color: green; width: 150px; padding: 15px; border-radius: 15px;">
+      <%= link_to "Show this employee", @employee , style:'color: #fff; text-decoration: none; justify-content: center; align-items: center; display: flex; font-size: 16px; font-family: Arial' %>
+    </p>
+    <p style="margin-left: 20px; background-color: blue; width: 150px; padding: 15px; border-radius: 15px;">
+      <%= link_to "Back to employees", employees_path , style:'color: #fff; text-decoration: none; justify-content: center; align-items: center; display: flex; font-size: 17px; font-family: Arial'%>
+    <p>
+  </div>
 </div>

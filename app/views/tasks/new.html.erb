@@ -1,9 +1,12 @@
-<h1>New task</h1>
+<div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center">
+
+  <h1 style="font-family: Arial">New task</h1>
 
 <%= render "form", task: @task %>
 
 <br>
 
-<div>
-  <%= link_to "Back to tasks", tasks_path %>
+<div style="background-color: blue; width: 150px; padding: 15px; border-radius: 15px;">
+  <%= link_to "Back to tasks", tasks_path, style:'color: #fff; text-decoration: none; justify-content: center; align-items: center; display: flex; font-size: 17px; font-family: Arial' %>
+</div>
 </div>

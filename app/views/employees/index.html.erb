@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 <div style="display:flex; justify-content: space-between; align-items: center; margin-bottom: 20px">
   <h1 style="margin-left: 100px; font-family: Arial">Employees</h1>
-  <p style="margin-right: 80px; background-color: green; width: 140px; padding: 13px; border-radius: 15px;">
+  <p style="margin-right: 80px; background-color: #2CEC02; width: 140px; padding: 13px; border-radius: 15px;">
   <%= link_to "Add employee +", new_employee_path, style:'color: #fff; text-decoration: none; justify-content: center; align-items: center; display: flex; font-size: 17px; font-family: Arial'%>
   </p>
 </div>
@@ -10,7 +10,7 @@
   <% @employees.each do |employee| %>
     <div class="employee-card">
       <%= render employee %>
-      <p style="background-color: blue; width: 150px; padding: 10px; border-radius: 8px; margin-left: 20px">
+      <p style="background-color: #00AEC0; width: 150px; padding: 10px; border-radius: 8px; margin-left: 20px">
         <%= link_to "Show this employee", employee, style:'color: #fff; text-decoration: none; justify-content: center; align-items: center; display: flex; font-size: 15px; font-family: Arial;'%>
       </p>
     </div>
